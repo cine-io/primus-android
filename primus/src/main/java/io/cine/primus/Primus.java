@@ -23,7 +23,7 @@ import java.util.Random;
  * Created by thomas on 9/21/14.
  */
 public class Primus {
-    private static final String VERSION = "0.0.2-SNAPSHOT";
+    private static final String VERSION = "0.0.3";
     private static final String TAG = "Primus";
     private final static String dictionary = "abcdefghijklmnopqrstuvwxyz0123456789_";
     private final Activity activity;
@@ -67,7 +67,7 @@ public class Primus {
     private Primus(Activity activity, String baseUrl) {
         this.activity = activity;
         this.baseUrl = baseUrl;
-        url = generateSignalingUrl();
+        url = generatePrimusUrl();
         Log.v(TAG, url);
         mHandler = new Handler();
         currentTimerRun = 0;
@@ -235,7 +235,7 @@ public class Primus {
     }
 
     // "ws://cine-io-signaling.herokuapp.com/primus/211/b9__ftym/websocket"
-    private String generateSignalingUrl() {
+    private String generatePrimusUrl() {
         Random r = new Random();
         int server = r.nextInt(1000);
         String connId = randomStringOfLength(8);
