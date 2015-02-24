@@ -23,7 +23,7 @@ import java.util.Random;
  * Created by thomas on 9/21/14.
  */
 public class Primus {
-    private static final String VERSION = "0.0.1";
+    private static final String VERSION = "0.0.2-SNAPSHOT";
     private static final String TAG = "Primus";
     private final static String dictionary = "abcdefghijklmnopqrstuvwxyz0123456789_";
     private final Activity activity;
