@@ -8,7 +8,7 @@ Add the following to your `build.gradle`.
 
 ```groovy
 dependencies {
-  compile 'io.cine:primus:0.0.2'
+  compile 'io.cine:primus:0.0.4'
 }
 ```
 
