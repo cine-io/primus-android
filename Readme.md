@@ -30,6 +30,18 @@ Download primus-android to your application with `./gradlew build`.
 
 ## Usage
 
+### AndroidManifest.xml
+
+Primus uses the internet. We need permission for that.
+
+```xml
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+  package="com.example.yourpackage">
+  <!-- Make sure to include the internet permission -->
+  <uses-permission android:name="android.permission.INTERNET" />
+</manifest>
+```
+
 ### Initialization
 
 ```java
